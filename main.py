@@ -286,7 +286,7 @@ with tab2:
         青紫舌 = 1
 
     # Button to trigger prediction
-    if st.button("证型预测", type='primary') == 1:
+    if st.button("提交并预测证型", type='primary') == 1:
 
         if ((身高==0) | (体重==0) | (月经初潮==0)):
             with st.container(border=True):
