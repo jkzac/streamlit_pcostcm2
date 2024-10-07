@@ -1,0 +1,6 @@
+boto3==1.35.16
+pandas==2.2.1
+s3fs==2024.9.0
+streamlit==1.35.0
+st-files-connection
+numpy==1.25.2

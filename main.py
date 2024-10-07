@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-import csv
-import os
 import boto3
 from io import StringIO
 from st_files_connection import FilesConnection
@@ -321,6 +319,7 @@ with tab2:
             血瘀证 = probabilities[0, 3]
             气滞证 = probabilities[0, 4]
 
+            ###############################################################################################
             ##Prepare to save user data
             # Get the current date and time
             录入时间 = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -355,7 +354,6 @@ with tab2:
                          舌苔黄, 舌苔腻, 脉浮, 脉沉, 脉迟, 脉数, 脉滑, 脉细, 脉弦, 脉涩, 脉无力, 多囊, 高血压, 高血脂, 糖尿病, 胰岛素抵抗,
                          肾阳虚证, 肾阴虚证, 痰湿证, 血瘀证, 气滞证]
 
-            ###############################################################################################
             # Create a DataFrame from the save_list
             df_user = pd.DataFrame([save_list], columns=column_names)
 
@@ -510,4 +508,3 @@ with tab3:
         st.write('(1) LH峰值判断排卵：看有无排卵前LH峰值及判断是否接近/或已排卵，排卵试纸就是LH试纸。')
         st.write('(2) E2高低判断卵泡质量和成熟时间：一般情况下一颗成熟卵泡有150以上的雌激素作为支撑，以此判断取卵和注射HCG卵泡催熟针剂的时间。当卵泡大小到达18以上，但是雌激素小于150时，视为雌激素偏低，有空泡或者卵子质量不好的可能性。')
         st.write('(3) 孕酮低可能出现排卵期出血：排卵后期血孕酮值低，见于黄体功能不全、排卵型功能失调性子宫出血等。')
-#%%
