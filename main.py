@@ -36,7 +36,7 @@ if count%2==1:
             "多囊卵巢综合征的确切病因尚不清楚，但早期诊断和治疗加上减肥可以降低长期并发症的风险。")
 ################
 
-tab1, tab2, tab3 = st.tabs(["PCOS自测诊断", "中医证型识别", "PCOS图书馆"])
+tab1, tab2, tab3 = st.tabs(["PCOS疾病预测", "中医证型识别", "PCOS图书馆"])
 
 with tab1:
     # Title
