@@ -40,7 +40,7 @@ tab1, tab2, tab3 = st.tabs(["PCOS疾病预测", "中医证型识别", "PCOS图�
 
 with tab1:
     # Title
-    st.subheader("PCOS自测工具", anchor='self-test')
+    st.subheader("PCOS预测工具", anchor='self-test')
 
     with st.container(border=True):
         st.markdown(":blue[**临床表现**]")
@@ -676,3 +676,5 @@ with tab3:
         st.write('(1) LH峰值判断排卵：看有无排卵前LH峰值及判断是否接近/或已排卵，排卵试纸就是LH试纸。')
         st.write('(2) E2高低判断卵泡质量和成熟时间：一般情况下一颗成熟卵泡有150以上的雌激素作为支撑，以此判断取卵和注射HCG卵泡催熟针剂的时间。当卵泡大小到达18以上，但是雌激素小于150时，视为雌激素偏低，有空泡或者卵子质量不好的可能性。')
         st.write('(3) 孕酮低可能出现排卵期出血：排卵后期血孕酮值低，见于黄体功能不全、排卵型功能失调性子宫出血等。')
+
+#%%
